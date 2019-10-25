@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BMI Calculator</title>
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/132665/isolated/preview/cf0b4b825cd99b7e00ccf5cad3e7a014-weightlifting-circle-icon-by-vexels.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4d799c321f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="mdc-icon">
+            <i class="fas fa-dumbbell"></i>
+        </div>
+
+        <div class="select">
+            <select class="select-text">
+                <option disabled selected>Select User</option>
+            </select>
+        </div>
+
+        <div class="user-photo">
+            <img src="https://via.placeholder.com/150.jpg" />
+        </div>
+
+        <div class="details mdc-elevation--z3">
+            <p>
+                <span class="prop" data-age="Age :">Age:</span>
+                <span class="value" data-age-value=""></span>
+            </p>
+
+            <p>
+                <span class="prop" data-height="Height :">Height:</span>
+                <span class="value" data-height-value=""></span>
+            </p>
+
+            <p>
+                <span class="prop" data-weight="Weight :">Weight:</span>
+                <span class="value" data-weight-value=""></span>
+            </p>
+
+            <p>
+                <span class="prop" data-gender="Gender :">Gender:</span>
+                <span class="value" data-gender-value=""></span>
+            </p>
+
+            <p>
+                <span class="prop" data-country="Country :">Country:</span>
+                <span class="value" data-country-value=""></span>
+            </p>
+
+        </div>
+
+        <button id="oracle" class="mdc-button">Calculate BMI</button>
+
+        <div id="outcome">
+            <h2 class="mdc-typography--headline5">BMI</h2>
+            <p id="bmiOutput"></p>
+        </div>
+
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
